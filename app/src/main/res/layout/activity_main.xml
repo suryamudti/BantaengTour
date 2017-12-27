@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgs"
+    tools:context="net.smile.bantaengtour.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ViewFlipper
+            android:flipInterval="4000"
+            android:autoStart="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/newsb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/dakkas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </ViewFlipper>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="3dp">
+
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:paddingBottom="50dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:columnWidth="150dp"
+            android:numColumns="2"
+            android:verticalSpacing="20dp"
+            android:horizontalSpacing="20dp"
+            android:stretchMode="spacingWidth"
+            android:gravity="center"
+            android:id="@+id/gridMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            >
+
+        </GridView>
+        
+    </LinearLayout>
+
+</LinearLayout>

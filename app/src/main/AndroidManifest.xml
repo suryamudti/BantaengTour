@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.smile.bantaengtour">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="net.smile.bantaengtour.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="net.smile.bantaengtour.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Dakka"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:label">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PetaWisataActivity"
+            android:label="Peta Wisata" />
+
+        <activity
+            android:name=".PopulerActivity"
+            android:label="Wisata Populer" />
+
+        <activity
+            android:name=".CultureActivity"
+            android:label="Budaya" />
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="Tentang" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBUKR7yDDvUwSKcLBXe0Z3FNCNpSoS4QDg" />
+
+        <activity android:name=".PopularDetailActivity" />
+
+        <activity android:name=".CultureDetailActivity" />
+
+        <activity
+            android:name=".TestScrollingActivity"
+            android:label="@string/title_activity_test_scrolling"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+    </application>
+
+</manifest>
